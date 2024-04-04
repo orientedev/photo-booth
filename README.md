@@ -133,6 +133,7 @@ async function initCamera() {
   } catch (err) {
     console.error("Error accessing the camera: ", err);
   }
+}
 
 // Initialize camera when the page loads
 window.addEventListener("DOMContentLoaded", initCamera);
@@ -182,7 +183,8 @@ Here's the MDN documentation to check more events: [MDN Events](https://develope
 
 We have a decent application so far, but it looks a little bit uggly. So we want to add some styles to it.
 
-1. Go to `main.js` and add import `style.css` stylesheet.
+1. Go to `main.js` and add import the style file `import "./style.css";` stylesheet.
+
 2. Go to `style.css` file and add the following styles: 
 
 ``` css
